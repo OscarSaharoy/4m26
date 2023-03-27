@@ -60,7 +60,7 @@ class Btree:
         i = 0
         while i < len(u.keys) and key > u.keys[i]:
             i += 1
-        if i < len(u.keys) and key == u.key[i]:
+        if i < len(u.keys) and key == u.keys[i]:
             return (u, i)
         if u.is_leaf:
             return None
